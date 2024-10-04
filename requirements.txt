@@ -6,3 +6,5 @@ tweepy
  seaborn
 Mastodon.py
 SQLAlchemy
+langdetect
+NLTK
