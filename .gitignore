@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+dist/
+build/
+*.whl
+*.egg
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# PySpark
+*.csv
+*.parquet
+*.json
+*.orc
+*.avro
+
+# PostgreSQL
+*.sql
+*.db
+*.sqlite
+*.dump
+*.backup
+
+# Kafka
+*.log
+*.tmp
+*.offsets
+
+# Environment Variables
+.env
+*.env
+*.local
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+*.swp
+
+# PyCharm files
+.idea/
+*.iml
+
+# Other files you might want to ignore
+*.csv
+*.tmp
+*.bak
+
+# Exclude virtual environments
+venv/
+ENV/
+env/
