@@ -1,4 +1,4 @@
-FROM jupyter/pyspark-notebook:spark-3.2.1
+FROM jupyter/pyspark-notebook:spark-3.3.0
 
 # Copier le fichier de dépendances
 COPY requirements.txt /home/jovyan/work/requirements.txt
@@ -25,5 +25,5 @@ RUN pip install -r requirements.txt
 ENV SPARK_HOME=/usr/local/spark
 ENV PYSPARK_SUBMIT_ARGS="--jars ${SPARK_HOME}/jars/spark-sql-kafka-0-10_2.12-3.2.1.jar,${SPARK_HOME}/jars/kafka-clients-2.8.1.jar pyspark-shell"
 
-# (Optionnel) Exposez le port si vous prévoyez d'utiliser un serveur web ou une interface
+# Exposer le port (optionnel)
 EXPOSE 8888

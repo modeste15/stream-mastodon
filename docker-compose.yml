@@ -45,6 +45,7 @@ services:
       - mastodon-network
 
   jupyter:
+    image : jupyter/pyspark-notebook:spark-3.1.2
     build: .
     container_name: jupyter
     ports:
